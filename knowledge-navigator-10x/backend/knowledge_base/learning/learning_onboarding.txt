@@ -1,0 +1,54 @@
+DEUTSCHE BANK LEARNING & ONBOARDING FRAMEWORK
+DOCUMENT ID: DB-LEARN-ONB-2026-V4.1
+CLASSIFICATION: INTERNAL USE ONLY
+
+1. INTRODUCTION TO THE ONBOARDING EXPERIENCE
+The Deutsche Bank Learning & Onboarding Framework is designed to integrate new employees into the organization rapidly, securely, and effectively. A structured onboarding process is critical for maximizing employee engagement, accelerating time-to-productivity, and ensuring immediate compliance with our stringent regulatory obligations. This framework applies to all new joiners, regardless of corporate title or location.
+
+2. THE FIRST DAY: FOUNDATION AND ACCESS
+The primary goal of Day 1 is to ensure the employee feels welcomed and has the logistical foundation to begin work. Critical Day 1 milestones include:
+- IT Access Setup: Provisioning of laptop, network credentials, email access, and standard software profiles.
+- HR Portal Registration: Completion of necessary employment documentation and enrollment in the central HR system.
+- Buddy Assignment: Introduction to an assigned "Buddy" – a peer within the team who provides informal guidance and answers day-to-day questions.
+- Team Introduction: A formal introduction to the immediate team and a briefing on the team's core mandate.
+
+3. THE FIRST WEEK: ORIENTATION AND CULTURE
+Week 1 shifts focus to organizational culture and foundational knowledge. Mandatory activities include:
+- Corporate Orientation Sessions: Virtual or in-person seminars covering Deutsche Bank's history, global strategy, and organizational structure.
+- DB Values Training: Deep dive into the bank's core values—Integrity, Sustainable Performance, Client Centricity, Innovation, Discipline, and Partnership.
+- Information Security Training: Immediate, mandatory briefing on data protection, phishing awareness, and acceptable use of IT assets.
+
+4. THE FIRST MONTH: ROLE-SPECIFIC INTEGRATION
+By the end of Month 1, the employee should be transitioning into their daily responsibilities. This phase requires:
+- Role-Specific Onboarding Plan: The Line Manager must provide a tailored 30/60/90-day plan outlining specific learning objectives and initial deliverables.
+- Shadowing: Spending dedicated time shadowing senior colleagues to observe standard operating procedures and system usage in real-time.
+- Mandatory Training Completion: Ensuring all global mandatory compliance modules are completed via the learning portal.
+
+5. GLOBAL MANDATORY TRAINING MODULES
+Due to our regulatory environment, certain training modules are strictly mandatory for all employees worldwide and must be completed within the first 30 days, and refreshed annually thereafter. These include:
+- Anti-Money Laundering (AML) & Know Your Customer (KYC)
+- Data Protection and GDPR Awareness
+- Information Security and Cyber Threat Awareness
+- The Deutsche Bank Code of Conduct
+- Market Abuse and Insider Trading Prevention
+- Conflicts of Interest and Anti-Bribery
+
+6. THE DBLEARN+ PLATFORM
+"dblearn+" is the bank's centralized, global learning management system. It hosts all online training, tracks completion status for regulatory reporting, and houses a vast library of optional technical and soft-skills courses. HR directly monitors completion rates via this platform and escalates non-compliance to Line Managers.
+
+7. THE COMPETENCY FRAMEWORK
+Learning and development are guided by the bank's overarching Competency Framework. This matrix defines the expectations for every role grade (from Analyst to Managing Director). It balances two core areas:
+- Technical Skills: The specific, measurable capabilities required to execute the job (e.g., financial modeling, Python coding, regulatory reporting).
+- Behavioral Competencies: The leadership, communication, and strategic thinking skills necessary to succeed and embody DB Values.
+
+8. THE PROBATION PERIOD
+All new external hires are subject to a standard 6-month probation period. During this time, the Line Manager must conduct documented monthly check-ins to provide feedback and assess cultural fit. A formal, comprehensive review is mandated at month 6 to confirm whether the employee has successfully passed probation and will be confirmed in their role.
+
+9. ANNUAL PERFORMANCE MANAGEMENT CYCLE
+Post-onboarding, learning is integrated into the annual performance cycle:
+- January: Annual goal setting, aligning individual objectives with departmental strategy.
+- July: Mid-year review to assess progress, adjust goals if necessary, and discuss development needs.
+- December: Year-end performance review, resulting in formal performance ratings which influence compensation.
+
+10. CONTINUOUS LEARNING AND MENTORING
+Deutsche Bank fosters a culture of continuous development. The bank formally encourages a minimum of 40 hours of dedicated learning time per employee per year. Furthermore, an optional, global Mentoring Program is available to all employees, allowing them to pair with senior leaders outside their direct reporting line for career guidance and network expansion.

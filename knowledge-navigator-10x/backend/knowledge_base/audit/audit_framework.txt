@@ -1,0 +1,41 @@
+DEUTSCHE BANK INTERNAL AUDIT FRAMEWORK
+DOCUMENT ID: DB-AUDIT-FW-2026-V5.0
+CLASSIFICATION: INTERNAL USE ONLY
+
+1. THE AUDIT CHARTER AND MANDATE
+The Group Internal Audit (GIA) function operates under a formal Audit Charter approved by the Supervisory Board's Audit Committee. This charter grants GIA unrestricted access to all functions, records, property, and personnel across Deutsche Bank globally. Crucially, GIA operates with absolute independence and objectivity, forming the 3rd Line of Defense. The Chief Audit Executive reports functionally directly to the Audit Committee, ensuring freedom from management interference.
+
+2. RISK-BASED AUDIT PLANNING
+GIA does not audit every department every year. Instead, resources are deployed based on risk. The Annual Audit Plan is developed through a rigorous risk assessment process that evaluates the inherent risks, regulatory focus areas, past audit results, and strategic changes within the bank. This dynamic, risk-based plan is formally presented to and approved by the Audit Committee annually, and updated quarterly to reflect emerging risks.
+
+3. THE AUDIT METHODOLOGY LIFECYCLE
+Every audit engagement follows a standardized, four-phase methodology to ensure consistency and quality:
+- Planning: Defining the scope, objectives, identifying key risks, and requesting preliminary data from the business unit.
+- Fieldwork: The core testing phase involving interviews, process walkthroughs, data analysis, and sample testing of controls.
+- Reporting: Drafting findings, discussing them with management, and issuing the formal audit report.
+- Follow-up: Monitoring the business's progress in fixing the identified issues.
+
+4. STANDARDS FOR AUDIT EVIDENCE
+Audit findings cannot be based on assumptions or hearsay. GIA adheres to strict standards regarding evidence. All audit conclusions must be supported by evidence that is Sufficient (enough quantity), Appropriate (relevant to the control being tested), and Reliable (from a trustworthy, preferably independent, source). This evidence is meticulously documented in the audit workpapers.
+
+5. CLASSIFICATION OF AUDIT FINDINGS
+When control weaknesses or process failures are identified, they are formally raised as Audit Findings. These findings are classified based on the severity of the risk they pose to the bank, which dictates the timeframe allowed for remediation:
+- Critical Findings: Represent an immediate, severe threat to the bank (e.g., massive regulatory breach, critical security vulnerability). Immediate, emergency action is required.
+- High Findings: Pose a significant risk. Management has a maximum of 30 days to fully remediate the issue.
+- Medium Findings: Represent a moderate risk or control gap. Remediation is required within 90 days.
+- Low Findings: Minor control enhancements or efficiency opportunities. Management has up to 180 days to implement changes.
+
+6. THE AUDIT REPORTING PROCESS
+Timeliness in reporting is essential for prompt risk mitigation. Upon conclusion of fieldwork, GIA must issue a Draft Audit Report to the business unit leadership within 2 weeks. The business management then has a strict 10-day window to provide their formal Management Response, which must include agreement/disagreement with the findings, the designated action owner, and the targeted completion date.
+
+7. ISSUE TRACKING AND ACCOUNTABILITY
+An audit is not complete when the report is issued. All finalized findings are logged into the centralized enterprise Audit Management System. This system tracks every issue through to completion. GIA provides monthly status reporting to the Group Executive Committee and the Audit Committee, highlighting any business units that are failing to remediate findings on time.
+
+8. THE FOLLOW-UP AND VALIDATION PROCESS
+Business units cannot simply close audit findings themselves. When management asserts that an issue is remediated, the Follow-up phase begins. GIA auditors must independently review the remediation evidence provided by the business. Only after GIA has verified that the implemented solution effectively addresses the root cause of the original finding will the issue be formally closed in the system.
+
+9. CONTINUOUS AUDITING AND ANALYTICS
+To supplement periodic formal audits, GIA increasingly employs Continuous Auditing techniques. By leveraging advanced data analytics and automated scripting, GIA can monitor massive volumes of transactional data across key systems between formal audit cycles. This allows for near real-time identification of control breakdowns or unusual patterns of activity.
+
+10. EXTERNAL AUDITOR COORDINATION
+To maximize efficiency and minimize the burden on the business, GIA coordinates closely with the bank's external auditors. Annually, the external auditors perform a "Reliance Assessment" on GIA's methodology, independence, and work quality. If deemed acceptable, the external auditors may place reliance on specific control testing performed by GIA, reducing duplication of effort during the year-end financial statement audit.

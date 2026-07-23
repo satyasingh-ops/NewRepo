@@ -1,0 +1,55 @@
+DEUTSCHE BANK ESCALATION FRAMEWORK
+DOCUMENT ID: DB-ESC-FW-2026-V2.1
+CLASSIFICATION: INTERNAL USE ONLY
+
+1. PURPOSE AND SCOPE
+This document defines the standard escalation framework for Deutsche Bank operations globally. A robust and clearly defined escalation process is vital for ensuring that issues, risks, and client concerns are raised to the appropriate level of management in a timely manner. This framework empowers employees to raise concerns without hesitation and ensures that leadership is adequately informed to make critical decisions during high-stress operational events.
+
+2. THE ESCALATION HIERARCHY
+The escalation matrix is structured across five distinct levels of management, each with specific responsibilities and thresholds for involvement.
+
+2.1. Level 1: Frontline Operations Team
+The frontline operations team is the foundation of service delivery. This level handles all routine queries, standard processing tasks, and initial incident reports. The primary responsibility of Level 1 is to resolve issues within the agreed Service Level Agreements (SLAs). If an issue cannot be resolved within the SLA, or if it presents unexpected complexities, it must immediately move to Level 2.
+
+2.2. Level 2: Team Lead
+The Team Lead is the first point of formal escalation. Escalation to Level 2 is required for:
+- Complex technical or process issues that Level 1 cannot resolve.
+- Any incident that has breached, or is in imminent danger of breaching, its defined SLA.
+- Issues that present potential, even if minor, regulatory implications or compliance concerns.
+The Team Lead is responsible for taking ownership of the escalated issue, coordinating additional resources, and providing guidance to the frontline team.
+
+2.3. Level 3: Operations Manager
+The Operations Manager is engaged when issues escalate beyond localized team control. Escalation to Level 3 is mandatory under the following circumstances:
+- Material risk events that could result in measurable financial loss.
+- Formal client complaints or expressions of severe dissatisfaction from key accounts.
+- Significant system outages affecting multiple teams or core business processes.
+The Operations Manager must ensure that cross-functional communication is established and that a definitive remediation plan is documented and executed.
+
+2.4. Level 4: Director
+Director-level escalation is reserved for critical events with broad implications. Triggers for Level 4 include:
+- Enterprise-wide impact resulting from catastrophic system failure or major external events.
+- Situations where formal regulatory reporting is required due to a breach or significant operational failure.
+- Prolonged outages where standard disaster recovery procedures have failed.
+The Director provides strategic oversight, manages executive communications, and interfaces with senior stakeholders across the bank.
+
+2.5. Level 5: Managing Director
+The Managing Director (MD) is the final point of escalation within the operational hierarchy. Level 5 escalation is required for existential threats or profound crises:
+- Events posing severe reputational risk to Deutsche Bank in the public domain.
+- Systemic failures threatening the ongoing viability of core banking services.
+- Imminent or active regulatory action, fines, or formal investigations by authorities.
+The MD holds ultimate authority for crisis management and board-level reporting.
+
+3. TIME-BASED ESCALATION TRIGGERS
+To prevent issues from stagnating, time-based automated escalations are enforced. Regardless of the current level of investigation, if there is no substantive update or progress recorded on a critical issue within 2 hours, the issue must automatically escalate one level up the hierarchy. This ensures continuous momentum toward resolution.
+
+4. SPECIALIZED ESCALATION PATHS
+Certain categories of issues require immediate, specialized handling outside the standard chronological flow.
+
+4.1. Client Escalations
+Any issue that originates as a direct client escalation or complaint must bypass standard queuing and be escalated immediately to the Level 2 Team Lead. Furthermore, the assigned Relationship Manager (RM) for that client must be notified concurrently so they can manage client expectations and communication.
+
+4.2. Regulatory Escalations
+Regulatory compliance is paramount. Any identified or suspected regulatory breach, regardless of severity, must trigger an immediate, parallel escalation. The central Compliance department must be formally notified within 24 hours of the discovery of any potential regulatory breach. Failure to adhere to this timeline is a severe disciplinary offense.
+
+5. DOCUMENTATION AND AUDITABILITY
+Every escalation, regardless of level, must be thoroughly documented in the system of record. The documentation must clearly state the rationale for the escalation, the exact timeline of events, the individuals involved, and the specific decisions made at each level. This audit trail is critical for post-incident reviews, regulatory reporting, and continuous process improvement.

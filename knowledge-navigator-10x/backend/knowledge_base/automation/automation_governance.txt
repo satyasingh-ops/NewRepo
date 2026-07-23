@@ -1,0 +1,41 @@
+DEUTSCHE BANK AUTOMATION & RPA GOVERNANCE FRAMEWORK
+DOCUMENT ID: DB-AUTO-GOV-2026-V3.0
+CLASSIFICATION: INTERNAL USE ONLY
+
+1. OVERVIEW AND OBJECTIVES
+The automation landscape at Deutsche Bank, encompassing Robotic Process Automation (RPA), intelligent automation, and custom scripting, is a key driver of operational efficiency. However, the deployment of "digital workers" introduces unique risks. This Governance Framework establishes the mandatory controls, oversight mechanisms, and lifecycle management protocols required to ensure that all automations operate securely, reliably, and in full compliance with bank policies.
+
+2. BUSINESS OWNERSHIP AND ACCOUNTABILITY
+The fundamental principle of automation governance is clear accountability. Every automated process, bot, or script deployed in a production environment must have a single, named Business Owner. This individual, typically at the Director level or above, is ultimately accountable for the automation's behavior, its adherence to regulatory requirements, the accuracy of its output, and any financial or reputational impact resulting from its failure. Orphaned automations (those without an active owner) will be suspended.
+
+3. THE AUTOMATION INVENTORY
+Visibility is the first step in control. All automations, regardless of complexity or underlying technology, must be formally registered in the centralized enterprise Automation Inventory before being deployed to production. This inventory acts as the single source of truth, tracking the purpose, ownership, technical dependencies, and risk classification of every digital worker in the bank.
+
+4. RISK ASSESSMENT AND CLASSIFICATION
+Not all automations carry the same level of risk. A mandatory pre-deployment risk assessment must be completed for every new automation. This assessment evaluates factors such as data sensitivity, transaction volume, financial value, and regulatory impact. Based on this, automations are classified into one of four tiers:
+- Low Risk: Internal administrative tasks with no financial or client data.
+- Medium Risk: Standard operational tasks with internal financial reporting implications.
+- High Risk: Client-facing processes or automations handling PII/sensitive data.
+- Critical Risk: Automations executing market trades, regulatory reporting, or large financial transfers.
+The risk tier dictates the strictness of the required controls, testing, and monitoring.
+
+5. TESTING AND QUALITY ASSURANCE
+Rigorous testing is mandatory to prevent flawed automations from impacting the business. User Acceptance Testing (UAT) must be successfully completed and signed off by the Business Owner for all new automations. Furthermore, comprehensive regression testing is required whenever changes are made to the automation code or to the underlying target applications it interacts with. All test plans, execution logs, and formal sign-off evidence must be archived and available for audit inspection.
+
+6. PRODUCTION MONITORING AND ALERTING
+Digital workers require continuous supervision. All production automations must be integrated with the bank's centralized monitoring tools. This monitoring must be real-time and configured to generate immediate alerts in the event of job failures, unexpected deviations in processing times, or unusually high error rates. The operations team must have clear playbooks on how to respond to these alerts.
+
+7. FALLBACK PROCEDURES AND BUSINESS CONTINUITY
+Technology fails, and automations are no exception. To ensure business continuity, every automated process must have a fully documented and tested manual fallback procedure. The business unit must maintain the capability to process the volume manually, or have alternative mitigation strategies in place, should the automation become completely unavailable for an extended period.
+
+8. CHANGE MANAGEMENT LIFECYCLE
+Automations are highly sensitive to changes in their environment. Therefore, any modification to an existing automation, no matter how minor, is subject to strict Change Management protocols. All changes require formal documented approval from the Business Owner and must undergo mandatory re-testing (UAT and regression) before the updated code is promoted to the production environment.
+
+9. ANNUAL REVIEW AND RECERTIFICATION
+To combat "bot rot" and ensure ongoing alignment with business needs, all automations are subject to a mandatory annual review. The Business Owner and the internal Controls team must jointly review the automation's performance, verify its continuing necessity, and confirm that all access rights and risk assessments are up to date. Failure to complete the annual recertification will result in the automation being disabled.
+
+10. EUDA VS. RPA DISTINCTION
+It is critical to distinguish between enterprise RPA (managed by IT) and End User Developed Applications (EUDAs). While both automate tasks, spreadsheet-based automations, local VBA macros, and desktop Python scripts created by business users are governed strictly under the separate EUDA framework, not this RPA framework.
+
+11. CREDENTIAL MANAGEMENT AND SECURITY
+Automations often require access to sensitive systems. Bot credentials must never be hardcoded or stored in plain text. All automation service accounts and passwords must be securely managed, rotated, and injected at runtime using the bank's approved Privileged Access Management (PAM) solution (e.g., CyberArk). Bots operate under the principle of least privilege.

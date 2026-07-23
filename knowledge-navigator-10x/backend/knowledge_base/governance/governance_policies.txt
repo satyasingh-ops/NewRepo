@@ -1,0 +1,50 @@
+DEUTSCHE BANK GOVERNANCE & POLICY MANAGEMENT FRAMEWORK
+DOCUMENT ID: DB-GOV-POL-2026-V2.0
+CLASSIFICATION: INTERNAL USE ONLY
+
+1. INTRODUCTION TO CORPORATE GOVERNANCE
+The Governance and Policy Management Framework defines how Deutsche Bank is directed, controlled, and managed. It establishes the rules, practices, and processes by which the Board of Directors and senior management ensure accountability, fairness, and transparency in the bank's relationship with all its stakeholders. A strong governance structure is essential for executing strategy while remaining within the defined risk appetite.
+
+2. THE POLICY HIERARCHY
+To prevent conflicting instructions and ensure consistency, all internal directives must fit within a strict Policy Hierarchy. Lower-level documents cannot contradict higher-level ones.
+- Board Policies: The highest level, defining strategic principles and overall risk appetite, approved directly by the Management Board.
+- Group Policies: Global mandates applicable to all divisions, outlining mandatory requirements for specific risk types (e.g., Group Anti-Money Laundering Policy).
+- Divisional Procedures: Specific operational instructions detailing exactly *how* a Group Policy is to be executed within a particular business unit or region.
+- Local Work Instructions: Highly granular, step-by-step desktop guides for individual tasks, aligned with divisional procedures.
+
+3. THE POLICY LIFECYCLE MANAGEMENT
+Policies are living documents that must be carefully managed from creation to retirement. The formal lifecycle includes:
+- Draft: Initial creation by subject matter experts.
+- Review: Rigorous scrutiny by key stakeholders, including Legal, Risk, and Compliance.
+- Approval: Formal sign-off by the designated governance committee or senior executive.
+- Publication: Official release on the central Policy Portal, accompanied by necessary communication and training.
+- Annual Review: Mandatory yearly assessment to ensure ongoing relevance and compliance with new regulations.
+- Retirement: Formal archiving when a policy is superseded or no longer necessary.
+
+4. POLICY OWNERSHIP AND ACCOUNTABILITY
+Every policy document, without exception, must have a named Policy Owner. This individual, typically a Managing Director or Director, is personally accountable for the document's content, its alignment with regulatory expectations, and for monitoring overall adherence to the policy's requirements across the bank.
+
+5. ANNUAL CERTIFICATION AND ATTESTATION
+Governance requires proactive affirmation. To ensure documents do not become stale, all Policy Owners must formally certify their policies annually, confirming they are accurate and fit for purpose. Furthermore, all staff members are required to complete an annual attestation, formally acknowledging that they have read, understood, and complied with the key Group Policies relevant to their role.
+
+6. CORE GOVERNANCE COMMITTEES
+Strategic decision-making is driven through a structure of formal Governance Committees. Key committees include:
+- Group Executive Committee (GEC): Oversees the day-to-day management of the bank and execution of strategy.
+- Risk Committee: Advises the Management Board on the bank's overall current and future risk appetite and strategy.
+- Audit Committee: Monitors the integrity of financial reporting and the effectiveness of internal controls and Internal Audit.
+- Remuneration Committee: Ensures compensation structures align with prudent risk-taking and long-term performance.
+
+7. EMBEDDING THE THREE LINES OF DEFENSE
+The Governance framework is inextricably linked to the Three Lines of Defense model. The 1st Line must design procedures that comply with policies; the 2nd Line (Policy Owners) drafts the policies and monitors compliance; and the 3rd Line (Internal Audit) independently evaluates the effectiveness of the entire policy management lifecycle.
+
+8. MANAGING POLICY EXCEPTIONS
+It is recognized that in rare, highly specific scenarios, strict adherence to a policy may be impossible or overly detrimental. In these cases, a formal Policy Exception process must be followed. Exceptions cannot be granted informally. They require a documented business justification, compensatory controls, and formal sign-off from both the Divisional Risk Officer and the relevant Compliance Officer. Exceptions are time-bound and must be reviewed regularly.
+
+9. CHANGE MANAGEMENT FOR POLICIES
+Significant alterations to governance require careful communication. Any material changes to Group Policies must undergo a mandatory 30-day consultation period before publication. This allows affected business units to review the proposed changes, assess the operational impact, and prepare necessary procedural updates.
+
+10. CONSEQUENCES OF POLICY BREACHES
+Adherence to internal policies is a condition of employment. Any identified breach of policy must be reported immediately to the Policy Owner and Human Resources. While minor, accidental breaches may result in retraining, repeated or deliberate breaches of Group Policy are viewed as serious misconduct and may result in formal disciplinary action, up to and including termination of employment.
+
+11. REGULATORY HORIZON SCANNING
+Governance must be forward-looking. The Group Regulatory Affairs team is responsible for Continuous Regulatory Horizon Scanning. They monitor publications from global regulators (ECB, BaFin, SEC, etc.) to identify upcoming regulatory changes, assess the strategic impact on Deutsche Bank, and ensure our internal policy framework is updated proactively before new laws come into effect.

@@ -1,0 +1,48 @@
+DEUTSCHE BANK CONTROLS FRAMEWORK
+DOCUMENT ID: DB-CTRL-FW-2026-V1.8
+CLASSIFICATION: INTERNAL USE ONLY
+
+1. PURPOSE OF THE CONTROLS FRAMEWORK
+The Deutsche Bank Controls Framework outlines the methodology for designing, implementing, executing, and evaluating internal controls. Controls are the mechanisms, rules, and procedures implemented by the bank to ensure the integrity of financial and accounting information, promote accountability, and prevent fraud. A robust control environment is essential for mitigating the risks identified in the Risk Management Framework.
+
+2. ALIGNMENT WITH COSO
+Our controls architecture is strictly aligned with the internationally recognized COSO (Committee of Sponsoring Organizations of the Treadway Commission) Internal Control - Integrated Framework. This ensures a comprehensive approach encompassing the control environment, risk assessment, control activities, information and communication, and monitoring activities.
+
+3. CONTROL DESIGN CATEGORIES
+Effective risk mitigation requires a layered approach to control design. All processes must incorporate a blend of the following control types:
+- Preventive Controls: Designed to stop an error or irregularity from occurring in the first place. Examples include system access restrictions, segregation of duties, and mandatory pre-approval workflows. These are the most effective but often the most costly to implement.
+- Detective Controls: Designed to identify and highlight an error or irregularity after it has occurred. Examples include daily reconciliations, exception reports, and periodic audits.
+- Corrective Controls: Designed to fix the issue once a detective control has identified it. Examples include automated adjustment entries or predefined incident response procedures.
+
+4. CONTROL TESTING FREQUENCY
+Controls must be regularly tested to ensure they are operating effectively. The required frequency of this testing is dictated entirely by the underlying risk rating of the process the control is mitigating:
+- High Risk Controls: Must be tested and validated at least monthly.
+- Medium Risk Controls: Must be tested and validated at least quarterly.
+- Low Risk Controls: Must be tested and validated at least annually.
+
+5. EVIDENCE REQUIREMENTS AND RETENTION
+A control is only as good as the evidence proving it was executed. For every control test performed, robust, irrefutable evidence must be generated and archived. This may include system screenshots, signed approval logs, or reconciliation outputs. In accordance with global regulatory standards, all control test evidence must be securely retained and readily accessible for a minimum period of 7 years.
+
+6. CLASSIFICATION OF CONTROL WEAKNESSES
+When a control fails its testing or is found to be poorly designed, the deficiency must be formally categorized based on its potential impact:
+- Control Deficiency: A minor flaw that does not severely impact the overall process.
+- Significant Deficiency: A more serious flaw that requires management attention and could lead to misstatements if left unaddressed.
+- Material Weakness: A critical failure in the control environment where there is a reasonable possibility that a material misstatement of the bank's financial statements will not be prevented or detected on a timely basis.
+
+7. REMEDIATION PROCEDURES
+Identifying a weakness is only the first step; fixing it is the priority. All identified control weaknesses must have a formally documented remediation plan. This plan must include a clear description of the fix, an assigned owner, and a strict target completion date. To ensure accountability, any remediation items that become overdue are automatically escalated to senior management on a weekly basis.
+
+8. SARBANES-OXLEY (SOX) CONTROLS
+A specific subset of our control environment relates to financial reporting. Controls that are deemed financially significant are subject to the rigorous testing and attestation requirements of the Sarbanes-Oxley Act (SOX). These controls undergo heightened scrutiny from both internal and external auditors.
+
+9. ASSESSING CONTROL EFFECTIVENESS
+Following testing, controls are assigned a formal effectiveness rating:
+- Effective: The control is properly designed and operating exactly as intended with no exceptions.
+- Partially Effective: The control is generally working, but minor deficiencies or occasional exceptions were noted during testing.
+- Ineffective: The control is fundamentally flawed in design or consistently fails to operate, providing no reliable risk mitigation.
+
+10. MANAGEMENT VS. INDEPENDENT TESTING
+The responsibility for control testing is shared. Senior Management within the 1st Line of Defense is required to test key controls quarterly to ensure their ongoing viability. In addition, the 2nd Line (Risk & Compliance) and 3rd Line (Internal Audit) conduct Independent Testing to provide objective assurance that the management testing is accurate and reliable.
+
+11. CONTINUOUS CONTROL MONITORING (CCM)
+To move away from purely point-in-time testing, the bank is increasingly leveraging Continuous Control Monitoring. Highly automated, high-volume controls are integrated into the enterprise Governance, Risk, and Compliance (GRC) system, allowing them to be monitored dynamically on a daily basis, flagging anomalies in near real-time.

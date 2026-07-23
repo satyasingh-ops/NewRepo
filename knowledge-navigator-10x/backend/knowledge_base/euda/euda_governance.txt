@@ -1,0 +1,42 @@
+DEUTSCHE BANK EUDA GOVERNANCE FRAMEWORK
+DOCUMENT ID: DB-EUDA-GOV-2026-V1.5
+CLASSIFICATION: INTERNAL USE ONLY
+
+1. INTRODUCTION AND DEFINITION OF EUDA
+The End User Developed Application (EUDA) Governance Framework addresses the unique risks associated with technology solutions created outside the formal IT development lifecycle. A EUDA is defined as any analytical tool, calculator, database, or script created by business end-users to process data, automate tasks, or support decision-making. Common examples include complex Excel spreadsheets with macros, Access databases, desktop Python/R scripts, and Alteryx workflows. While EUDAs drive agility, they often lack standard IT controls, presenting significant operational and financial risks.
+
+2. THE MANDATORY EUDA INVENTORY
+The foundation of EUDA control is visibility. It is a strict policy requirement that all EUDAs utilized in standard business processes must be registered in the centralized enterprise EUDA Inventory. Registration must occur within 30 days of the EUDA's creation or introduction into a production workflow. "Shadow IT" or unregistered EUDAs are strictly prohibited and subject to immediate suspension by IT security.
+
+3. EUDA CLASSIFICATION CRITERIA
+Because a simple tracking spreadsheet does not carry the same risk as a complex pricing model, EUDAs are classified into three tiers based on their inherent risk profile. This classification dictates the level of required governance:
+- Critical EUDAs: Tools whose failure or inaccuracy could result in a financial impact >€1M, tools used directly for external regulatory reporting, or tools feeding core general ledger systems.
+- Important EUDAs: Tools supporting key operational decisions, internal financial reporting, or processing significant volumes of sensitive data, but falling below the Critical thresholds.
+- Non-Critical EUDAs: Administrative trackers, localized team tools, or simple calculators with minimal financial or regulatory impact.
+
+4. BUSINESS OWNERSHIP AND TECHNICAL CUSTODIANSHIP
+Accountability for EUDAs lies firmly within the business, not IT. Every registered EUDA must have two distinct named roles:
+- Business Owner: A senior manager accountable for the business process the EUDA supports, responsible for certifying its accuracy and authorizing its use.
+- Technical Custodian: The individual (often the creator) responsible for the day-to-day maintenance, code updates, and technical troubleshooting of the tool.
+
+5. RISK ASSESSMENT PROTOCOLS
+To ensure risks are continuously managed, an annual risk assessment is mandatory for all Critical and Important EUDAs. This assessment evaluates factors such as the complexity of the underlying logic, the volatility of the data sources, the reliance on manual inputs, and the potential impact of errors.
+
+6. DOCUMENTATION STANDARDS
+Unlike formal IT software, EUDAs often suffer from "key person dependency" where only the creator understands how they work. To mitigate this, strict documentation standards apply. Critical and Important EUDAs must maintain:
+- A user guide detailing execution steps.
+- A documented version history tracking all logic changes.
+- A data lineage map showing all data sources and destinations.
+- Documented evidence of output validation (proving the tool calculates correctly).
+
+7. ACCESS CONTROLS AND SECURITY
+EUDAs often process sensitive information. Therefore, access to EUDAs must be strictly restricted to authorized users on a need-to-know basis. For Critical EUDAs, a formal access log must be maintained, detailing who has read/write permissions. Furthermore, EUDAs must be stored on secure, backed-up network drives or approved SharePoint sites; storing EUDAs on local laptop hard drives is prohibited.
+
+8. EUDA CHANGE MANAGEMENT
+Uncontrolled changes to EUDA logic can lead to massive downstream errors. Any modification to the logic, formulas, or macros of a Critical EUDA requires formal Change Management. The Technical Custodian must perform the changes in a copy of the file, conduct testing to ensure the changes function as expected, and obtain documented sign-off from the Business Owner before the updated EUDA replaces the production version.
+
+9. ANNUAL REVIEW AND RECERTIFICATION
+To prevent the proliferation of obsolete tools, the EUDA Inventory is subject to a rigorous annual recertification cycle. Every year, the designated Business Owner must review all EUDAs under their remit and formally recertify that the tools are still actively required, that the classification remains accurate, and that all required documentation and controls are in place.
+
+10. DECOMMISSIONING PROCEDURES
+When a EUDA is replaced by a formal strategic IT system or is no longer required by the business, it cannot simply be deleted. Retired EUDAs must go through a formal decommissioning process. The Business Owner must authorize the retirement, ensure that any necessary historical data is migrated to the new system or archived appropriately, and formally update the EUDA Inventory to reflect the tool's "Decommissioned" status.

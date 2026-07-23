@@ -1,0 +1,45 @@
+DEUTSCHE BANK RISK MANAGEMENT FRAMEWORK
+DOCUMENT ID: DB-RISK-FW-2026-V4.2
+CLASSIFICATION: INTERNAL USE ONLY
+
+1. INTRODUCTION
+The Deutsche Bank Risk Management Framework is the foundational structure that defines how the bank identifies, assesses, mitigates, and monitors risks across its global operations. It is designed to foster a strong risk culture, ensure long-term financial stability, and protect our clients, shareholders, and reputation.
+
+2. THE THREE LINES OF DEFENSE MODEL
+The cornerstone of our risk governance is the industry-standard "Three Lines of Defense" model, which clearly delineates responsibilities for risk management:
+- 1st Line of Defense (Business Units): The front-line business and operations teams are the primary risk owners. They are responsible for identifying risks within their day-to-day activities, implementing controls, and operating within the defined risk appetite.
+- 2nd Line of Defense (Risk & Compliance): This independent function provides oversight, establishes the risk management frameworks, monitors the 1st line's activities, and challenges business decisions from a risk perspective.
+- 3rd Line of Defense (Internal Audit): Group Internal Audit provides completely independent and objective assurance to the Board of Directors that the 1st and 2nd lines are functioning effectively.
+
+3. RISK CATEGORIES
+To ensure comprehensive coverage, risks are classified into defined primary categories:
+- Credit Risk: The risk of loss arising from a borrower or counterparty failing to meet their financial obligations.
+- Market Risk: The risk of loss in the trading book due to changes in market variables such as interest rates, equity prices, or foreign exchange rates.
+- Operational Risk: The risk of loss resulting from inadequate or failed internal processes, people, systems, or from external events (including fraud and cyber risk).
+- Liquidity Risk: The risk that the bank will be unable to meet its payment obligations when they come due.
+- Reputational Risk: The potential for negative publicity or public perception to cause a decline in the customer base or revenue.
+- Compliance Risk: The risk of legal or regulatory sanctions, financial loss, or damage to reputation resulting from failure to comply with laws, regulations, and rules.
+
+4. RISK APPETITE
+The Risk Appetite Statement is approved annually by the Board of Directors. It articulates the aggregate level and types of risk the bank is willing to accept to achieve its strategic objectives. This statement includes both quantitative limits (e.g., maximum exposure to a specific sector) and qualitative boundaries (e.g., zero tolerance for deliberate regulatory breaches).
+
+5. RISK IDENTIFICATION: THE RCSA PROCESS
+Proactive risk identification is crucial. The primary mechanism for this is the Risk and Control Self-Assessment (RCSA) process, conducted annually by all business units. The RCSA requires managers to systematically identify the operational risks inherent in their processes, evaluate the effectiveness of the controls mitigating those risks, and identify areas requiring remediation.
+
+6. RISK RATING METHODOLOGY
+Identified risks are quantified using a standardized matrix to ensure consistency across the enterprise. The risk score is calculated by multiplying the Likelihood of occurrence (rated 1 to 5) by the potential Impact (rated 1 to 5).
+- Risk Score > 12: Classified as High Risk. Requires immediate attention and stringent controls.
+- Risk Score 8 - 12: Classified as Medium Risk. Requires regular monitoring and periodic review.
+- Risk Score < 8: Classified as Low Risk. Managed through routine processes.
+
+7. RISK REGISTER AND ESCALATION
+All identified risks categorized as Medium or High must be formally documented in the centralized Risk Register. This register is tracked continuously and reviewed monthly by departmental management. Escalation protocols are strict: any newly identified High risk must be escalated to the divisional Risk Committee within 5 business days for immediate strategic review.
+
+8. KEY RISK INDICATORS (KRIs)
+To monitor the risk profile dynamically, businesses must define and track Key Risk Indicators (KRIs). KRIs are forward-looking metrics designed to provide early warning signals of increasing risk exposure. Each KRI is configured with specific red, amber, and green thresholds to trigger predefined management actions before a risk materializes into a loss.
+
+9. RISK ACCEPTANCE PROTOCOLS
+While the goal is to mitigate risk, there are instances where residual risk remains after controls are applied. If a residual risk exceeds the bank's defined risk appetite, it cannot be simply ignored. It requires a formal "Risk Acceptance" process. This necessitates documented sign-off from the relevant Managing Director and mandatory notification to the Group Risk Committee, ensuring senior-level accountability.
+
+10. OPERATIONAL RISK EVENTS
+When a risk materializes and a failure occurs, it is classified as an Operational Risk Event. Transparency is mandated. Any operational risk event resulting in a financial loss (or near-miss) exceeding €10,000 must be formally logged in the incident management system and reported to the central Operational Risk department within 24 hours of discovery for investigation and root cause analysis.
