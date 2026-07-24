@@ -58,7 +58,7 @@ function buildDemoResponse(question: string, persona: string, domain?: string | 
       response_time: 1.2
     };
   } else if ((q.includes('asset service') || q.includes('asset services')) && q.includes('db is')) {
-    const summary = "Asset Services in DB IS (Institutional Services) provides end-to-end management of client assets, including corporate actions, income collection, proxy voting, and tax services.";
+    const summary = "Asset Services in DB IS (Investment Services) provides end-to-end management of client assets, including corporate actions, income collection, proxy voting, and tax services.";
     const details = "Asset Services is a core operational division within Deutsche Bank. It ensures that institutional investors and custodians receive accurate and timely processing of all lifecycle events related to their investment portfolios.";
     return {
       answer: `📄 **Summary**\n${summary}\n\n📖 **Detailed Explanation**\n${details}\n\n💼 **Business Value**\nAccurate asset servicing minimizes operational risk, prevents financial losses from missed corporate actions, and ensures high client satisfaction for institutional partners.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Ensure all asset servicing SLAs are being met.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- dbis_combined_final_summary.txt\n- operations_manual.txt\n`,
@@ -98,7 +98,7 @@ function buildDemoResponse(question: string, persona: string, domain?: string | 
       response_time: 1.2
     };
   } else if (q.includes('tax') && q.includes('recertification')) {
-    const summary = "Tax recertification is processed by the Tax Operations and Client Onboarding & Lifecycle Management (COLM) teams within DB Institutional Services.";
+    const summary = "Tax recertification is processed by the Tax Operations and Client Onboarding & Lifecycle Management (COLM) teams within DB Investment Services.";
     const details = "The Tax Operations team is responsible for managing the periodic review and recertification of client tax documentation (such as W-8BEN, W-9, and CRS forms). They ensure all documentation remains valid and compliant with global tax authorities like the IRS and OECD.";
     return {
       answer: `📄 **Summary**\n${summary}\n\n📖 **Detailed Explanation**\n${details}\n\n💼 **Business Value**\nAccurate and timely tax recertification prevents regulatory penalties, ensures correct withholding tax rates are applied, and maintains a seamless operational experience for institutional clients.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Ensure no client accounts are trading with expired tax forms.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- tax_compliance_guidelines.txt\n- client_lifecycle_management.txt\n`,
