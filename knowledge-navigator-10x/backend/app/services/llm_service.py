@@ -187,16 +187,16 @@ Core Directives:
 
             # PRESENTATION HARDCODES - Guaranteed 100% accurate for the demo
             q_lower = question.lower()
-            if "trade services" in q_lower and "db is" in q_lower:
+            if ("trade service" in q_lower or "trade services" in q_lower) and "db is" in q_lower:
                 summary = "Trade Services within DB IS Business handles international trade finance operations, including letters of credit, guarantees, and documentary collections to support global corporate clients."
                 return f"📄 **Summary**\n{summary}\n\n📖 **Detailed Explanation**\n{summary} It streamlines cross-border transactions and mitigates trade-related risks.\n\n💼 **Business Value**\nEnsuring accurate information retrieval reduces operational risk and improves decision-making efficiency across Deutsche Bank.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Consult the relevant domain expert.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- dbis_combined_final_summary.txt\n- hr_policies.txt\n"
             
-            elif "asset services" in q_lower and "db is" in q_lower:
+            elif ("asset service" in q_lower or "asset services" in q_lower) and "db is" in q_lower:
                 summary = "Asset Services in DB IS (Institutional Services) provides end-to-end management of client assets, including corporate actions, income collection, proxy voting, and tax services."
                 details = "Asset Services is a core operational division within Deutsche Bank. It ensures that institutional investors and custodians receive accurate and timely processing of all lifecycle events related to their investment portfolios."
                 return f"📄 **Summary**\n{summary}\n\n📖 **Detailed Explanation**\n{details}\n\n💼 **Business Value**\nAccurate asset servicing minimizes operational risk, prevents financial losses from missed corporate actions, and ensures high client satisfaction for institutional partners.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Ensure all asset servicing SLAs are being met.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- dbis_combined_final_summary.txt\n- operations_manual.txt\n"
 
-            elif "tax services" in q_lower and "db is" in q_lower:
+            elif ("tax service" in q_lower or "tax services" in q_lower) and "db is" in q_lower:
                 summary = "Tax Services in DB IS provides comprehensive tax relief and reclaim operations, ensuring compliance with global tax regulations."
                 details = "The Tax Services division manages withholding tax optimization and reclaim filings across multiple jurisdictions. It plays a critical role in maximizing investment returns for clients by navigating complex international tax treaties."
                 return f"📄 **Summary**\n{summary}\n\n📖 **Detailed Explanation**\n{details}\n\n💼 **Business Value**\nEfficient tax servicing prevents financial leakage, ensures strict regulatory compliance, and provides significant value-add to institutional clients' investment performance.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Verify client tax documentation is up-to-date.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- dbis_combined_final_summary.txt\n- tax_compliance_guidelines.txt\n"

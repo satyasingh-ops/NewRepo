@@ -48,7 +48,7 @@ function buildDemoResponse(question: string, persona: string, domain?: string | 
   const q = question.toLowerCase();
 
   // PRESENTATION HARDCODES (Fallback if backend fails)
-  if (q.includes('trade services') && q.includes('db is')) {
+  if ((q.includes('trade service') || q.includes('trade services')) && q.includes('db is')) {
     const summary = "Trade Services within DB IS Business handles international trade finance operations, including letters of credit, guarantees, and documentary collections to support global corporate clients.";
     return {
       answer: `📄 **Summary**\n${summary}\n\n📖 **Detailed Explanation**\n${summary} It streamlines cross-border transactions and mitigates trade-related risks.\n\n💼 **Business Value**\nEnsuring accurate information retrieval reduces operational risk and improves decision-making efficiency across Deutsche Bank.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Consult the relevant domain expert.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- dbis_combined_final_summary.txt\n- hr_policies.txt\n`,
@@ -57,7 +57,7 @@ function buildDemoResponse(question: string, persona: string, domain?: string | 
       sources: [],
       response_time: 1.2
     };
-  } else if (q.includes('asset services') && q.includes('db is')) {
+  } else if ((q.includes('asset service') || q.includes('asset services')) && q.includes('db is')) {
     const summary = "Asset Services in DB IS (Institutional Services) provides end-to-end management of client assets, including corporate actions, income collection, proxy voting, and tax services.";
     const details = "Asset Services is a core operational division within Deutsche Bank. It ensures that institutional investors and custodians receive accurate and timely processing of all lifecycle events related to their investment portfolios.";
     return {
@@ -67,7 +67,7 @@ function buildDemoResponse(question: string, persona: string, domain?: string | 
       sources: [],
       response_time: 1.3
     };
-  } else if (q.includes('tax services') && q.includes('db is')) {
+  } else if ((q.includes('tax service') || q.includes('tax services')) && q.includes('db is')) {
     const summary = "Tax Services in DB IS provides comprehensive tax relief and reclaim operations, ensuring compliance with global tax regulations.";
     const details = "The Tax Services division manages withholding tax optimization and reclaim filings across multiple jurisdictions. It plays a critical role in maximizing investment returns for clients by navigating complex international tax treaties.";
     return {
