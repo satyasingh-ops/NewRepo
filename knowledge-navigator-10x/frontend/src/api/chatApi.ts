@@ -97,6 +97,16 @@ function buildDemoResponse(question: string, persona: string, domain?: string | 
       sources: [],
       response_time: 1.2
     };
+  } else if (q.includes('tax') && q.includes('recertification')) {
+    const summary = "Tax recertification is processed by the Tax Operations and Client Onboarding & Lifecycle Management (COLM) teams within DB Institutional Services.";
+    const details = "The Tax Operations team is responsible for managing the periodic review and recertification of client tax documentation (such as W-8BEN, W-9, and CRS forms). They ensure all documentation remains valid and compliant with global tax authorities like the IRS and OECD.";
+    return {
+      answer: `📄 **Summary**\n${summary}\n\n📖 **Detailed Explanation**\n${details}\n\n💼 **Business Value**\nAccurate and timely tax recertification prevents regulatory penalties, ensures correct withholding tax rates are applied, and maintains a seamless operational experience for institutional clients.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Ensure no client accounts are trading with expired tax forms.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- tax_compliance_guidelines.txt\n- client_lifecycle_management.txt\n`,
+      domain_detected: 'dbis_business',
+      suggested_questions: [],
+      sources: [],
+      response_time: 1.3
+    };
   } else if (q.includes('holi')) {
     return {
       answer: `📄 **Summary**\nHoli is a popular ancient Hindu festival, also known as the Festival of Colors, Love, and Spring. It is celebrated in March.\n`,
