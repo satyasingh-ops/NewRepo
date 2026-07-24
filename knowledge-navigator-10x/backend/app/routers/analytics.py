@@ -2,7 +2,7 @@
 from fastapi import APIRouter
 from app.services.analytics_service import analytics_service
 
-router = APIRouter(prefix="/api/analytics", tags=["Analytics"])
+router = APIRouter(prefix="/analytics", tags=["Analytics"])
 
 
 @router.get("/dashboard")

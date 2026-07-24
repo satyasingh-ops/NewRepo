@@ -73,8 +73,17 @@ app.include_router(chat.router)
 app.include_router(documents.router)
 app.include_router(analytics.router)
 
+# Also mount under /api for Vercel fallback compatibility
+api_router = FastAPI()
+api_router.include_router(auth.router)
+api_router.include_router(chat.router)
+api_router.include_router(documents.router)
+api_router.include_router(analytics.router)
+app.mount("/api", api_router)
+
 
 @app.get("/", response_class=JSONResponse)
+@api_router.get("/", response_class=JSONResponse)
 async def root():
     return {
         "name": "Knowledge Navigator 10X",
@@ -86,6 +95,7 @@ async def root():
 
 
 @app.get("/health", response_model=HealthResponse)
+@api_router.get("/health", response_model=HealthResponse)
 async def health_check():
     from app.config import AI_PROVIDER, KNOWLEDGE_DOMAINS, GOOGLE_API_KEY
     ai_status = f"{AI_PROVIDER}" + (" ✅" if GOOGLE_API_KEY and GOOGLE_API_KEY != "PASTE_YOUR_GOOGLE_API_KEY_HERE" else " ⚠️ (no API key)")

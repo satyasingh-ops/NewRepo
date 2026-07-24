@@ -4,7 +4,7 @@ from fastapi import APIRouter, HTTPException, status
 from app.models.schemas import LoginRequest, UserResponse
 from app.config import DEMO_USERS
 
-router = APIRouter(prefix="/api/auth", tags=["Authentication"])
+router = APIRouter(prefix="/auth", tags=["Authentication"])
 
 # Simple in-memory token store (use Redis/JWT in production)
 _active_tokens: dict = {}

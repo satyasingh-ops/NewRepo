@@ -12,7 +12,7 @@ from app.services.analytics_service import analytics_service
 from prompts.system_prompt import build_prompt
 
 logger = logging.getLogger(__name__)
-router = APIRouter(prefix="/api/chat", tags=["Chat"])
+router = APIRouter(prefix="/chat", tags=["Chat"])
 
 
 @router.post("/message", response_model=ChatResponse)

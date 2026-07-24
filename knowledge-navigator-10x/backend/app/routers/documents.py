@@ -7,7 +7,7 @@ from app.services.rag_service import rag_service
 from app.config import KNOWLEDGE_BASE_DIR, KNOWLEDGE_DOMAINS
 
 logger = logging.getLogger(__name__)
-router = APIRouter(prefix="/api/documents", tags=["Documents"])
+router = APIRouter(prefix="/documents", tags=["Documents"])
 
 
 @router.get("/domains")
