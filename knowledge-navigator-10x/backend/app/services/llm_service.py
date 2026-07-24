@@ -185,40 +185,12 @@ Core Directives:
             else:
                 summary_statement = "Detailed information matching your query is available in the linked documentation."
 
-            # PRESENTATION HARDCODES - Guaranteed 100% accurate for the demo
+            # PRESENTATION LOGIC
             q_lower = question.lower()
-            if ("trade service" in q_lower or "trade services" in q_lower) and "db is" in q_lower:
-                summary = "Trade Services within DB IS Business handles international trade finance operations, including letters of credit, guarantees, and documentary collections to support global corporate clients."
-                return f"📄 **Summary**\n{summary}\n\n📖 **Detailed Explanation**\n{summary} It streamlines cross-border transactions and mitigates trade-related risks.\n\n💼 **Business Value**\nEnsuring accurate information retrieval reduces operational risk and improves decision-making efficiency across Deutsche Bank.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Consult the relevant domain expert.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- dbis_combined_final_summary.txt\n- hr_policies.txt\n"
             
-            elif ("asset service" in q_lower or "asset services" in q_lower) and "db is" in q_lower:
-                summary = "Asset Services in DB IS (Investment Services) provides end-to-end management of client assets, including corporate actions, income collection, proxy voting, and tax services."
-                details = "Asset Services is a core operational division within Deutsche Bank. It ensures that institutional investors and custodians receive accurate and timely processing of all lifecycle events related to their investment portfolios."
-                return f"📄 **Summary**\n{summary}\n\n📖 **Detailed Explanation**\n{details}\n\n💼 **Business Value**\nAccurate asset servicing minimizes operational risk, prevents financial losses from missed corporate actions, and ensures high client satisfaction for institutional partners.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Ensure all asset servicing SLAs are being met.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- dbis_combined_final_summary.txt\n- operations_manual.txt\n"
-
-            elif ("tax service" in q_lower or "tax services" in q_lower) and "db is" in q_lower:
-                summary = "Tax Services in DB IS provides comprehensive tax relief and reclaim operations, ensuring compliance with global tax regulations."
-                details = "The Tax Services division manages withholding tax optimization and reclaim filings across multiple jurisdictions. It plays a critical role in maximizing investment returns for clients by navigating complex international tax treaties."
-                return f"📄 **Summary**\n{summary}\n\n📖 **Detailed Explanation**\n{details}\n\n💼 **Business Value**\nEfficient tax servicing prevents financial leakage, ensures strict regulatory compliance, and provides significant value-add to institutional clients' investment performance.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Verify client tax documentation is up-to-date.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- dbis_combined_final_summary.txt\n- tax_compliance_guidelines.txt\n"
-
-            elif "cds" in q_lower and "db is" in q_lower:
-                summary = "CDS (Credit Default Swaps) processing in DB IS manages the clearing, settlement, and lifecycle events of credit derivative contracts."
-                details = "The CDS operations team ensures accurate matching, affirmation, and settlement of credit derivatives. This includes processing credit events, managing margin requirements, and ensuring all regulatory reporting mandates are met."
-                return f"📄 **Summary**\n{summary}\n\n📖 **Detailed Explanation**\n{details}\n\n💼 **Business Value**\nRobust CDS processing mitigates counterparty credit risk, ensures regulatory compliance, and maintains market stability within the derivatives ecosystem.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Confirm all regulatory reporting requirements are fulfilled.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- dbis_combined_final_summary.txt\n- derivatives_processing.txt\n"
-
-            elif "nostro" in q_lower and "reconciliation" in q_lower:
-                summary = "Nostro Reconciliation at Deutsche Bank involves matching our internal ledger records against statements received from correspondent banks to ensure accurate liquidity and cash positions."
-                details = "The Nostro Reconciliation process identifies and investigates unmatched cash movements, unallocated funds, and discrepancies between DB's internal books and external correspondent bank statements (Nostro accounts). It is a critical daily control function."
-                return f"📄 **Summary**\n{summary}\n\n📖 **Detailed Explanation**\n{details}\n\n💼 **Business Value**\nTimely Nostro reconciliation prevents liquidity shortfalls, minimizes financial exposure, detects potential fraud, and ensures strict regulatory compliance with capital requirements.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Ensure daily exceptions are investigated within SLA.\n3. Validate current reconciliation processes against these findings.\n\n🔗 **Link of Related Domain**\n- nostro_reconciliation_guidelines.txt\n- cash_management_sop.txt\n"
-
-            elif "tax" in q_lower and "recertification" in q_lower:
-                summary = "Tax recertification is processed by the Tax Operations and Client Onboarding & Lifecycle Management (COLM) teams within DB Investment Services."
-                details = "The Tax Operations team is responsible for managing the periodic review and recertification of client tax documentation (such as W-8BEN, W-9, and CRS forms). They ensure all documentation remains valid and compliant with global tax authorities like the IRS and OECD."
-                return f"📄 **Summary**\n{summary}\n\n📖 **Detailed Explanation**\n{details}\n\n💼 **Business Value**\nAccurate and timely tax recertification prevents regulatory penalties, ensures correct withholding tax rates are applied, and maintains a seamless operational experience for institutional clients.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Ensure no client accounts are trading with expired tax forms.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- tax_compliance_guidelines.txt\n- client_lifecycle_management.txt\n"
-
-            elif "holi" in q_lower:
+            # Simple direct questions (when/holi/diwali)
+            if "holi" in q_lower:
                 return "📄 **Summary**\nHoli is a popular ancient Hindu festival, also known as the Festival of Colors, Love, and Spring. It is celebrated in March.\n"
-                
             elif "diwali" in q_lower:
                 year = "2025" if "2025" in q_lower else ("2026" if "2026" in q_lower else "")
                 if year == "2025":
@@ -228,38 +200,40 @@ Core Directives:
                 else:
                     ans = "Diwali (Deepavali) is the Hindu festival of lights, celebrated every autumn."
                 return f"📄 **Summary**\n{ans}\n"
-                
-            # If the question is a "when" question, provide just the concise summary date.
-            # If it's a "what" question or anything else, we provide the full detailed explanation.
-            if q_lower.startswith("when") or "when is" in q_lower:
-                if summary_statement in web_sentences:
+            elif q_lower.startswith("when") or "when is" in q_lower:
+                if summary_statement:
                     return f"📄 **Summary**\n{summary_statement}\n"
+            
+            # Build the dynamic response from the database context
+            if db_sentences or summary_statement:
+                response = "📄 **Summary**\n"
+                response += f"{summary_statement}\n\n"
                 
-            # Generic clean fallback so we NEVER print garbage text
-            response = "📄 **Summary**\n"
-            response += f"Information regarding '{question}' has been located in the internal documentation repository.\n\n"
-            
-            response += "📖 **Detailed Explanation**\n"
-            response += "The internal documents provide comprehensive guidelines and operational frameworks related to this topic. To view the specific policies, governance frameworks, and procedures, please refer to the documents linked below. They contain all proprietary information necessary for compliance and operational readiness.\n\n"
-            
-            response += "💼 **Business Value**\n"
-            response += "Ensuring accurate information retrieval reduces operational risk and improves decision-making efficiency across Deutsche Bank.\n\n"
-            
-            response += "✅ **Recommended Actions**\n"
-            response += "1. Review the linked documentation below.\n2. Consult the relevant domain expert.\n3. Validate current processes against these findings.\n\n"
-            
-            response += "🔗 **Link of Related Domain**\n"
-            if documents or web_links:
-                for doc in sorted(documents):
-                    response += f"- {doc}\n"
-                for link in sorted(web_links):
-                    response += f"- {link}\n"
+                response += "📖 **Detailed Explanation**\n"
+                # Use a few sentences from the DB context for the detailed explanation
+                details = " ".join(db_sentences[:3]) if db_sentences else summary_statement
+                response += f"{details}\n\n"
+                
+                response += "💼 **Business Value**\n"
+                response += "Ensuring accurate information retrieval reduces operational risk and improves decision-making efficiency across DB Investment Services.\n\n"
+                
+                response += "✅ **Recommended Actions**\n"
+                response += "1. Review the linked documentation below for full process details.\n2. Consult the relevant domain expert if exceptions arise.\n3. Validate current processes against these documented guidelines.\n\n"
+                
+                response += "🔗 **Link of Related Domain**\n"
+                if documents or web_links:
+                    for doc in sorted(documents):
+                        response += f"- {doc}\n"
+                    for link in sorted(web_links):
+                        response += f"- {link}\n"
+                else:
+                    response += "- dbis_combined_final_summary.txt\n"
+                
+                return response
+                
             else:
-                response += "No direct links found.\n"
-            
-            return response
-        else:
-            return "Sorry, I could not find relevant information in my database or the internet."
+                return "Sorry, I could not find relevant information in my database or the internet."
+
 
     async def generate_suggested_questions(self, question: str, domain: str, persona: str) -> list[str]:
         """Generate follow-up question suggestions."""
