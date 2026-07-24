@@ -164,8 +164,8 @@ Core Directives:
             # Try to find a sentence that contains keywords from the question
             keywords = [word.lower() for word in question.split() if len(word) > 3 and word.lower() not in ["what", "how", "explain", "describe", "when", "where", "who", "why"]]
             
-            # Combine both for searching, prioritizing web for general questions
-            pool = web_sentences + db_sentences
+            # Combine both for searching, prioritizing DB over internet as requested by user
+            pool = db_sentences + web_sentences
             
             best_sentence = None
             for sentence in pool:
@@ -210,8 +210,13 @@ Core Directives:
                 response += f"{summary_statement}\n\n"
                 
                 response += "📖 **Detailed Explanation**\n"
-                # Use a few sentences from the DB context for the detailed explanation
-                details = " ".join(db_sentences[:3]) if db_sentences else summary_statement
+                # Use a few sentences from the DB context or Web context for the detailed explanation
+                if db_sentences:
+                    details = " ".join(db_sentences[:3])
+                elif web_sentences:
+                    details = " ".join(web_sentences[:3])
+                else:
+                    details = summary_statement
                 response += f"{details}\n\n"
                 
                 response += "💼 **Business Value**\n"
