@@ -202,7 +202,7 @@ Here is the relevant information from Deutsche Bank's {domain_display} knowledge
 {kb_content}
 
 ---
-*💡 NeuraDB — Deutsche Bank Enterprise AI Assistant | Connect the backend to Gemini for full AI responses.*"""
+*💡 DBOmni — Deutsche Bank Enterprise AI Assistant | Connect the backend to Gemini for full AI responses.*"""
     else:
         # No KB snippets — give a concise domain-focused answer
         domain_guidance = {
@@ -224,7 +224,7 @@ Here is the relevant information from Deutsche Bank's {domain_display} knowledge
 For your specific question — *"{question}"* — please start the full Gemini AI backend for a precise, context-aware response.
 
 ---
-*💡 NeuraDB — Deutsche Bank Enterprise AI Assistant*"""
+*💡 DBOmni — Deutsche Bank Enterprise AI Assistant*"""
 
 # ── Top 10 builder ────────────────────────────────────────────────────────────
 TOP10_ITEMS = {

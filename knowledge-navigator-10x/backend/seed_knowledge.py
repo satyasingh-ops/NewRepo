@@ -217,7 +217,7 @@ def seed():
         logger.warning(f"⚠️  Verification failed: {e}")
 
     print("\n" + "="*60)
-    print("  🎉 Knowledge Base Ready!")
+    print("  Knowledge Base Ready!")
     print("="*60)
     print("\nNext step — start the backend server:")
     print("  python -m uvicorn app.main:app --reload --port 8000\n")

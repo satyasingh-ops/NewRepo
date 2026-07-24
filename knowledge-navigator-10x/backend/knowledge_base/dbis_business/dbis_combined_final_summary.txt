@@ -1,0 +1,134 @@
+DBIS | Combined Final Summary
+Transcribed from photographed pages (Sections 1, 3–9). Section 2 was not among the photos provided.
+Note: a few system/tool names in the dense reference tables were hard to read in the source photos; please cross-check those against the original where accuracy is critical.
+
+1. This is Deutsche Bank
+● Deutsche Bank was founded in 1870 in Berlin as a specialist bank for financing foreign trade and promoting German exports.
+● The bank has a strong position in Germany and Europe and operates across North America, Asia and key emerging markets.
+● Deutsche Bank operates through Corporate Bank, Investment Bank, Private Bank and DWS, supported by global operations and delivery capabilities.
+● The Deutsche Bank logo is a square with a diagonal slash, symbolizing stability and dynamic growth, reliability, progress and unity.
+● The bank’s purpose is to support clients’ lasting success and financial security at home and abroad.
+● The vision is to be the Global Hausbank: the European champion and first choice for clients.
+● The strategy focuses on a sharpened business model, targeted growth, disciplined resource allocation and excess capital returns over time.
+● “With deep dedication” captures the bank’s long-term client commitment, deep expertise and more than 150 years of experience.
+
+Operations relevance
+For DB IS, this purpose means maintaining financial security through accurate data, timely settlement, strong controls, clear escalation and reliable client outcomes.
+
+Aspiration Culture
+● Expected behaviours include acting responsibly, thinking commercially, taking initiative and working collaboratively.
+● In operations this translates into ownership, quality-first execution, risk awareness, evidence discipline and proactive stakeholder engagement.
+
+3. Securities Market and Investment Banking Basics
+● Securities are tradable financial instruments with economic value, issued by companies or governments to raise capital and traded by investors.
+● Main securities include equities, debt instruments, derivatives and hybrids. Equities represent ownership, debt represents borrowing, derivatives derive value from an underlying asset, and hybrids combine features.
+● The Primary Market issues new securities; the Secondary Market enables trading of existing securities and provides liquidity.
+● Key market participants include issuers, investors, brokers, stock exchanges, custodians, depositories and regulators.
+● Investment Banking supports capital raising, advisory, risk management, financing, origination and liquidity services.
+
+Pillar Meaning Role
+Front Office Client-facing activities such as sales, service and advisory. Initiates revenue-generating client activity.
+Middle Office Risk management, transaction processing and technology oversight. Connects client activity with controlled execution.
+Back Office Settlement, clearing, confirmations, records, compliance and admin support. Ensures operational completion and control.
+
+Know Your Business Terminology
+Term Definition Purpose Operations Link
+ISIN 12-character security identifier. Global security identification. Securities setup and processing.
+WKN 6-digit German security code. German/European securities identifier. WKN creation and static data.
+Custodian Safeguards client securities. Custody, tax, settlement support. Reconciliation and safekeeping.
+Depository Holds securities electronically. Market settlement infrastructure. Positions and transfers.
+OTC Trading outside formal exchanges. Less standardized trading. Needs strong controls.
+
+4. Trade Services
+● Trade Services manages the full transaction lifecycle from capture and execution through confirmation, clearing and final settlement.
+● The team handles trades and non-trades. Trades involve voluntary exchange of value; non-trades include transfers, gifts, inheritance, free-of-payment movements and other instructions.
+● Core focus areas include instruction accuracy, rejected instruction repair, settlement matching, failed trade resolution, confirmations, regulatory reporting and risk prevention.
+
+Process Purpose Key Activities Systems / Notes
+Inx Non-Trades Initiates non-trade transfers. Manual instructions, PRAF initiation, delivery/receipt, security locks, worthless securities. EE2, Orinoco, BURT, Message View, CASCADA, XACT.
+Inx Systems Handles rejected instructions. Input/modification of online instructions and reclaims to responsible teams. DMS, DB Smart, Easyway, Message View, CASCADA, XACT.
+Settlement Match & Fails Matches and resolves unmatched/failed trades. Investigates missing/mismatched instructions, follows up with counterparties, avoids BUY-IN risk. DMS, DB Smart, Easyway, XACT, CASCADA.
+Settlement Confirmation Applies custodian confirmations in EE2. Repairs transactions, cleans rejected confirmations, releases holdings when required. XACT, Message View, Cascade, EE2, Easyway, Pilot II.
+Registered Shares Handles registration/deregistration. Reconciles registered shares and supports voting rights for AGMs. EE2, CASCADA, Message View, DMS.
+Cancellation & Correction Amends/cancels client orders. Changes account, shares, settlement dates, calculates fees and corrects statements. DMS, DB Smart, FORSS, NOS, COSMOS, XACT.
+LT, Cash & Dispo Books location transfer, payments and short-position balancing. Realignment, MT payments, disposition balancing. EE2, TKN, Outlook, Orinoco.
+HRM Validation Validates high-risk media orders. Validates instructions, callbacks, routes to Fachbereich; critical deadlines. EE2, BURT, NOS, COSMOS.
+Trade Investigation & Fees Investigates TME/Konto 2 breaks and custodian fees. Break resolution, P&L; sheets, Bundesbank reporting, custodian/transaction fees. Tributum, TLM, XACT, Pilot II, Abacus, FORSS, IPP.
+MiFIR Regulatory reporting under Article 26. Pre/post matching, manual amendments, missing information reclamation and BaFin reporting. EE2, BURT, Mailbox, TRE.
+
+5. Asset Services
+● Asset Services manages corporate action events, shareholder information, client instructions, income processing, reconciliation and FX-related activities.
+● Corporate actions may be mandatory, mandatory with options or voluntary. They can affect shareholder entitlements, capital structure and investor choices.
+● Reconciliation ensures that cash, stock, position, trade and corporate action information remains accurate across custodians, brokers, fund managers and internal systems.
+
+Area Purpose Key Activities Systems / Notes
+CA Instructions Captures customer decisions. Voluntary and mandatory-with-option instructions captured in WPM/EE2 before event deadlines. DMS, DB Smart DSS, EE2, IPP Emerald, RRE, CAWFM.
+CA Disclosure Discloses shareholder details. Name, ISIN, holding date and shares disclosed to agents such as Nasdaq, IHS Markit and MUFG. DMS, COMPES, EE2, CAWFM, Papyrus, CA Neu, Message View.
+Client Information Translation Creates client letters. Letters for warrants, convertible bonds and reverse convertible bonds to support client decisions. DMS, DB Smart DSS, EE2, IPP Emerald, RRE, CAWFM.
+CA Reconciliation Reconciles CA cash/stock breaks. Skontrierung, FX securing, open trades/positions and closure before impacted trading. TLM, Jira Burt, Pilot II, CAWFM, Easymatch.
+Income Reconciliation Reconciles income-related breaks. Interest, dividend and redemption income; amount paid to clients equals received amount. Abacus, PBC One Line, DMS, TLM, EE2, Jira Burt.
+FX Reconciliation Pre-reconciles non-EUR/FX breaks. Tax and FX instructions, non-EUR payments and pay-date readiness. DMS, COMPES, EE2, CAWFM, Papyrus, CA Neu, Message View.
+
+Types of Reconciliation
+Type What It Compares Why It Matters
+Cash and Security Compares cash/securities transactions, positions and balances. Ensures accuracy and consistency.
+Trade Matches fund manager and broker trade details. Checks security, quantity, price and settlement date.
+Position Compares fund manager positions with custodian/broker records. Checks security, quantity and value.
+Corporate Action Compares CA details across custodian/broker/fund manager. Checks type, record date, ex-date and entitlement.
+
+6. Tax Services
+● Tax Services provides end-to-end tax support to German clients eligible for tax reduction or exemption on European and U.S. securities under DTAA and other tax requirements.
+● The scope includes tax reclaim, tax relief, QI reporting, substitute certificates, compensation tax processing, stock reconciliation and reports processing.
+● TS2 and TP11 are part of Trade Services but operate under the Tax Services umbrella in the presented framework.
+
+Area Purpose Key Points Systems / Notes
+International Tax Reclaim & Relief Supports German taxpayers. 11 European countries, 100k–135k annual reclaim forms, five currencies, approx. EUR 15m FX. Tax Manager, DMS, DB Smart DSS, Tributum, EE2, COSMOS, XACT, TLM, NOS, Orinoco, Tributum.
+Substitute Certificate TS10 Processes tax certificate requests. Original/replacement annual tax certificates and annual statements for complex transactions. DB Smart DSS, DMS, EE2 Tool, NOS-Menue.
+QI Reporting US tax compliance. US tax forms, withholding, reporting, remittance, reduced withholding and client confidentiality. NOS-Menue, EE2, Pilot II, FORSS, Rejects, Manager, Abacus.
+TP11 Stock Reconciliation Administers internal cash/stock accounts. Netting, matching, P&L; on shares, error/fraction account, Bundesbank reporting. Orinoco, Tributum.
+TS2 Reports Reports short positions/negative balances. Monitors captures, clarifies implausible entries. NOS-Menue, EE2.
+Compensation Tax Processing Calculates German Abgeltungsteuer. Security purchase details, cancellations, donation matching, loss compensation and year-end tasks. EE2, Tributum.
+
+7. Chief Divisional Services
+● CDS supports Trade Processing, Asset Services and Tax Processing through Data Maintenance, Kursinfo, Neutral Control, Investigations, BISO and Policy.
+● The stream provides security setup, price maintenance, stock/cash reconciliation, investigation of open items, reporting, access governance and policy tracking.
+
+CDS Area Responsibility Key Activities Systems / Notes
+Static Data Maintenance Creates WKNs and activates/amends securities. WKN generation, new security activation, static data amendments in EE2; deadlines 15-60 minutes. EE2, Euroclear, WM Daten; 07:00–19:00 CET; 100% German.
+Kursinfo Maintains securities and forex prices. Updates DB system prices, provides historical prices and daily forex prices to internal departments. EE2, Bloomberg, Webgateway, Börsenzeitung, WM Daten.
+Neutral Control OC2/OC12 Reconciles stock and cash positions. Matches stock/cash transactions in Easymatch, flags unclear items and reports open/reconciled balances. EE2, DB Smart, DMS Report, CARO, RIK, Easymatch.
+Investigations OC9/OC10/CEP2 Tracks and investigates open items. Manual closing, missing transactions, unallocated stock/cash, RAISE, client and status reports. EE2, TLM, Easymatch, Pilot, JASPER, CARO, CAWFM.
+BISO Monitors user access rights. Approvals, recertification of profiles/roles and access governance. Control-oriented compliance activity.
+Policy Tracks DB/DBIS policy updates. Informs owners about organizational changes in frameworks/policies. Governance and policy maintenance.
+
+8. Auxiliary Activities
+Module 1 emphasis: Auxiliary Activities are included as a dedicated section because they enable the primary operations to run smoothly, securely and sustainably.
+
+Auxiliary Function Detailed Summary
+German Akademie PAN India initiative for non-German speakers where German language training is provided for A1 level without additional cost. It builds communication capability for Germany-facing processes. Sponsor: Mohammad Rizwan. Lead: Damanpreet Kochhar. Coordinators: Puneet Malhotra and Shaifali Tuli. Locations include Jaipur, Bangalore, Pune and Mumbai.
+Learning and Development Designs, delivers and evaluates learning programs to improve skills, knowledge and performance. L&D; identifies learning gaps and creates targeted initiatives for employee growth.
+Access Team Ensures only authorized individuals have required access, manages grants/revocations, monitors access logs and supports entitlement integrity and security protocols.
+Asset Management Team Manages business assets and arranges assets for new joiners, supporting onboarding, readiness and continuity of operations.
+Women of Worth Flagship inclusion program focused on mentorship, skill development, networking, overcoming workplace challenges and positioning women for leadership.
+
+Key takeaway
+These functions strengthen language readiness, learning maturity, secure access, onboarding experience, employee engagement and inclusive leadership across DB IS.
+
+9. Compliance, Policies and Final Takeaways
+Topic Policy Message Employee Action Risk
+Personal Account Dealing / OBI Employees and related parties must follow policy and must not assume exclusions. Read and understand the policy before investing or declaring activities. Red Flag exposure if breached.
+Authorized Communication Private channels such as WhatsApp, WeChat, Telegram or Facebook Messenger are prohibited for business communication. Use approved DB channels only. Supports data confidentiality.
+Mandatory Training Complete modules before the deadline. More than 30 days delay may result in Red Flag. Protects responsible information.
+Data Security DB emails/documents must not be forwarded to personal accounts. Personal email for home printing is not a valid exception. Employee responsibility.
+Red Flag Policy Breaches of Red Flag policies, procedures or controls must not be forwarded to the deadline. Treat compliance breaches with urgency. Controls and accountability.
+
+Final New Joiner Takeaways
+Theme Message Action
+Client Purpose DB exists to support clients’ lasting success and financial security. View every task through risk, timeliness and client impact.
+Control Discipline IKS, documentation, access reviews, policy adherence and escalation are central. Do it right, evidence it clearly and escalate early.
+Process Connectivity Static data, trades, corporate actions, tax, reconciliation and investigations are linked. Understand upstream and downstream impact.
+Skill Readiness German language, system knowledge, securities basics and compliance awareness matter. Keep learning and ask early.
+Collaboration Teams work with DBIS, Front Office, Middle Office, custodians, counterparties and internal departments. Clear ownership improves resolution speed.
+
+Combined final summary
+This combined version brings together the detailed Module 1 foundation and the process-specific decks into one 10-page induction-ready reference. It is suitable as a concise handout for new joiners or a refresher for operations stakeholders.

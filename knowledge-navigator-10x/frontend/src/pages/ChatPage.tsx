@@ -172,7 +172,7 @@ export default function ChatPage() {
                   <Sparkles className="w-10 h-10 text-white" />
                 </div>
                 <h2 className="text-2xl font-black text-gray-900 dark:text-white mb-2">
-                  Neura <span className="gradient-text">DB</span>
+                  DB<span className="gradient-text">Omni</span>
                 </h2>
                 <p className="text-gray-500 dark:text-gray-400 text-sm">
                   Your AI assistant — ask anything about Deutsche Bank policies, procedures, risk, compliance, and more.

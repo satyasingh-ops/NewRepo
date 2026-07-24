@@ -162,30 +162,48 @@ class RAGService:
             logger.error(f"Knowledge base ingestion failed: {e}")
             return {"status": "error", "error": str(e)}
     
-    async def search(self, query: str, domain: Optional[str] = None, top_k: int = TOP_K_RESULTS) -> List[Dict[str, Any]]:
+    async def search(
+        self,
+        query: str,
+        domain: Optional[str] = None,
+        top_k: int = TOP_K_RESULTS,
+        score_threshold: float = 1.85,
+    ) -> List[Dict[str, Any]]:
         """Semantic search for relevant documents."""
         if not self._initialized or self._vector_store is None:
             return []
-        
+
+        # If user explicitly selected a domain, raise threshold to ensure domain documents return
+        effective_threshold = 2.2 if domain else score_threshold
+
         try:
             # Build filter for domain if specified
             where_filter = {"domain": domain} if domain else None
-            
+
             if where_filter:
                 results = self._vector_store.similarity_search_with_score(
                     query, k=top_k, filter=where_filter
                 )
             else:
                 results = self._vector_store.similarity_search_with_score(query, k=top_k)
-            
-            return [
+
+            # Filter out results that are too dissimilar to the query
+            filtered = [
                 {
                     "content": doc.page_content,
                     "metadata": doc.metadata,
-                    "score": float(score)
+                    "score": float(score),
                 }
                 for doc, score in results
+                if float(score) <= effective_threshold
             ]
+
+            if not filtered:
+                logger.info(
+                    f"No results within relevance threshold ({score_threshold}) for query: '{query[:80]}'"
+                )
+
+            return filtered
         except Exception as e:
             logger.error(f"Search failed: {e}")
             return []

@@ -116,6 +116,16 @@ export const KNOWLEDGE_DOMAINS: KnowledgeDomain[] = [
     keywords: ['annual leave', 'remote working', 'performance', 'benefits', 'wellbeing', 'disciplinary'],
     insights: ['Core hours 10am-3pm', 'Up to 40% remote working', 'EAP available for wellbeing', 'Zero tolerance for discrimination'],
   },
+  {
+    id: 'dbis_business',
+    name: 'DBIS Business',
+    icon: '💼',
+    description: 'DBIS business structure, securities, trade services, asset services, tax, and CDS operations.',
+    documentCount: 1,
+    color: '#2563eb',
+    keywords: ['DBIS', 'securities', 'trade', 'asset services', 'tax services', 'CDS', 'reconciliation'],
+    insights: ['Global Hausbank vision', 'Quality-first execution', 'Understand upstream impact', 'Clear ownership improves speed'],
+  },
 ];
 
 export const TOP_10_TOPICS = [

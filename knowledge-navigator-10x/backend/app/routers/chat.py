@@ -2,6 +2,7 @@
 import uuid
 import time
 import logging
+from typing import Optional
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
 from app.models.schemas import ChatRequest, ChatResponse, SourceDocument
@@ -27,25 +28,61 @@ async def send_message(request: ChatRequest):
             domain=request.domain,
             top_k=5
         )
+
+        # 2. Search internet
+        from app.services.web_search_service import web_search_service
+        web_results = web_search_service.search(request.question, max_results=3)
+        web_context_str = web_search_service.format_web_results(web_results)
+
+        # 3. Format context from retrieved documents
+        db_context = rag_service.format_context(search_results)
         
-        # 2. Format context from retrieved documents
-        context = rag_service.format_context(search_results)
-        
-        # 3. Detect domain from question if not specified
+        context = ""
+        if db_context:
+            context += f"## Internal Database Context:\n{db_context}\n\n"
+        if web_context_str:
+            context += f"## Universal Internet Context:\n{web_context_str}\n\n"
+
+        # 4. Return constrained response if no relevant data found in either
+        if not context.strip():
+            response_time = round(time.time() - start_time, 2)
+            not_found_answer = "Sorry, I am not supposed to answer which is not in my database or the internet."
+            
+            analytics_service.record_query(
+                question=request.question,
+                persona=request.persona,
+                domain=request.domain,
+                response_time=response_time,
+                session_id=session_id,
+            )
+            return ChatResponse(
+                answer=not_found_answer,
+                sources=[],
+                suggested_questions=[],
+                domain_detected=request.domain,
+                persona=request.persona,
+                response_time=response_time,
+                session_id=session_id,
+            )
+
+        # 5. Detect domain from question if not specified
         detected_domain = request.domain or _detect_domain(request.question)
         
-        # 4. Build prompt with persona and context
+        # Force operations_analyst persona as requested by user
+        effective_persona = "operations_analyst"
+
+        # 6. Build prompt with persona and context
         prompt = build_prompt(
             question=request.question,
-            persona=request.persona,
+            persona=effective_persona,
             domain=detected_domain,
             context=context
         )
-        
-        # 5. Generate response
+
+        # 7. Generate response
         answer = await llm_service.generate(prompt)
         
-        # 6. Generate suggested follow-up questions
+        # 8. Generate suggested follow-up questions
         suggested_questions = await llm_service.generate_suggested_questions(
             question=request.question,
             domain=detected_domain or "general",
@@ -54,7 +91,7 @@ async def send_message(request: ChatRequest):
         
         response_time = round(time.time() - start_time, 2)
         
-        # 7. Record to analytics
+        # 9. Record to analytics
         analytics_service.record_query(
             question=request.question,
             persona=request.persona,
@@ -63,7 +100,7 @@ async def send_message(request: ChatRequest):
             session_id=session_id,
         )
         
-        # 8. Build source documents
+        # 10. Build source documents
         sources = [
             SourceDocument(
                 content=r["content"][:300] + "..." if len(r["content"]) > 300 else r["content"],
@@ -72,6 +109,15 @@ async def send_message(request: ChatRequest):
             )
             for r in search_results
         ]
+        
+        for w in web_results:
+            sources.append(
+                SourceDocument(
+                    content=w["snippet"][:300] + "..." if len(w["snippet"]) > 300 else w["snippet"],
+                    metadata={"source": w["url"], "title": w["title"]},
+                    relevance_score=0.9
+                )
+            )
         
         return ChatResponse(
             answer=answer,
@@ -201,6 +247,7 @@ def _detect_domain(question: str) -> Optional[str]:
         "euda": ["euda", "spreadsheet", "access database", "application governance", "inventory"],
         "learning": ["training", "learning", "onboarding", "development", "competency"],
         "hr": ["hr", "human resources", "performance", "leave", "benefits", "employee"],
+        "dbis_business": ["dbis", "securities", "trade", "asset services", "tax services", "cds", "reconciliation"],
     }
     
     scores = {}

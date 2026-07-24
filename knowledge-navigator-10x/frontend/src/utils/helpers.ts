@@ -58,6 +58,7 @@ export function getDomainColor(domainId: string): string {
     euda: '#0e7490',
     learning: '#16a34a',
     hr: '#db2777',
+    dbis_business: '#2563eb',
   };
   return colors[domainId] || '#0052cc';
 }
