@@ -87,6 +87,16 @@ function buildDemoResponse(question: string, persona: string, domain?: string | 
       sources: [],
       response_time: 1.4
     };
+  } else if (q.includes('nostro') && q.includes('reconciliation')) {
+    const summary = "Nostro Reconciliation at Deutsche Bank involves matching our internal ledger records against statements received from correspondent banks to ensure accurate liquidity and cash positions.";
+    const details = "The Nostro Reconciliation process identifies and investigates unmatched cash movements, unallocated funds, and discrepancies between DB's internal books and external correspondent bank statements (Nostro accounts). It is a critical daily control function.";
+    return {
+      answer: `📄 **Summary**\n${summary}\n\n📖 **Detailed Explanation**\n${details}\n\n💼 **Business Value**\nTimely Nostro reconciliation prevents liquidity shortfalls, minimizes financial exposure, detects potential fraud, and ensures strict regulatory compliance with capital requirements.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Ensure daily exceptions are investigated within SLA.\n3. Validate current reconciliation processes against these findings.\n\n🔗 **Link of Related Domain**\n- nostro_reconciliation_guidelines.txt\n- cash_management_sop.txt\n`,
+      domain_detected: 'operations',
+      suggested_questions: [],
+      sources: [],
+      response_time: 1.2
+    };
   } else if (q.includes('holi')) {
     return {
       answer: `📄 **Summary**\nHoli is a popular ancient Hindu festival, also known as the Festival of Colors, Love, and Spring. It is celebrated in March.\n`,

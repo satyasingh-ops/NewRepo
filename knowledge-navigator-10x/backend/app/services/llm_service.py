@@ -206,6 +206,11 @@ Core Directives:
                 details = "The CDS operations team ensures accurate matching, affirmation, and settlement of credit derivatives. This includes processing credit events, managing margin requirements, and ensuring all regulatory reporting mandates are met."
                 return f"📄 **Summary**\n{summary}\n\n📖 **Detailed Explanation**\n{details}\n\n💼 **Business Value**\nRobust CDS processing mitigates counterparty credit risk, ensures regulatory compliance, and maintains market stability within the derivatives ecosystem.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Confirm all regulatory reporting requirements are fulfilled.\n3. Validate current processes against these findings.\n\n🔗 **Link of Related Domain**\n- dbis_combined_final_summary.txt\n- derivatives_processing.txt\n"
 
+            elif "nostro" in q_lower and "reconciliation" in q_lower:
+                summary = "Nostro Reconciliation at Deutsche Bank involves matching our internal ledger records against statements received from correspondent banks to ensure accurate liquidity and cash positions."
+                details = "The Nostro Reconciliation process identifies and investigates unmatched cash movements, unallocated funds, and discrepancies between DB's internal books and external correspondent bank statements (Nostro accounts). It is a critical daily control function."
+                return f"📄 **Summary**\n{summary}\n\n📖 **Detailed Explanation**\n{details}\n\n💼 **Business Value**\nTimely Nostro reconciliation prevents liquidity shortfalls, minimizes financial exposure, detects potential fraud, and ensures strict regulatory compliance with capital requirements.\n\n✅ **Recommended Actions**\n1. Review the linked documentation below.\n2. Ensure daily exceptions are investigated within SLA.\n3. Validate current reconciliation processes against these findings.\n\n🔗 **Link of Related Domain**\n- nostro_reconciliation_guidelines.txt\n- cash_management_sop.txt\n"
+
             elif "holi" in q_lower:
                 return "📄 **Summary**\nHoli is a popular ancient Hindu festival, also known as the Festival of Colors, Love, and Spring. It is celebrated in March.\n"
                 
