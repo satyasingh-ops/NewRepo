@@ -148,11 +148,11 @@ function buildDemoResponse(question: string, persona: string, domain?: string | 
   else if (q.includes('risk') || q.includes('rcsa') || q.includes('three lines') || q.includes('kri')) detectedDomain = 'risk';
   else if (q.includes('compliance') || q.includes('gdpr') || q.includes('mifid') || q.includes('regulatory')) detectedDomain = 'compliance';
   else if (q.includes('control') || q.includes('coso')) detectedDomain = 'controls';
+  else if (q.includes('hr') || q.includes('performance') || q.includes('employee') || q.includes('leave')) detectedDomain = 'hr';
   else if (q.includes('governance') || q.includes('policy') || q.includes('committee')) detectedDomain = 'governance';
   else if (q.includes('euda') || q.includes('spreadsheet') || q.includes('application inventory')) detectedDomain = 'euda';
   else if (q.includes('automat') || q.includes('rpa') || q.includes('bot')) detectedDomain = 'automation';
   else if (q.includes('training') || q.includes('onboard') || q.includes('learning') || q.includes('new joiner')) detectedDomain = 'learning';
-  else if (q.includes('hr') || q.includes('performance') || q.includes('employee') || q.includes('leave')) detectedDomain = 'hr';
   else if (q.includes('sla') || q.includes('incident') || q.includes('escalat') || q.includes('operation')) detectedDomain = 'operations';
 
   // Persona greeting
