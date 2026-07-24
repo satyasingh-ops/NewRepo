@@ -534,10 +534,20 @@ export const chatApi = {
     try {
       const { data } = await apiClient.post('/api/chat/message', params);
       return data;
-    } catch {
-      // ── Backend offline: use built-in demo response engine ─────────────────
-      await new Promise((r) => setTimeout(r, 1200 + Math.random() * 800)); // realistic delay
-      return buildDemoResponse(params.question, params.persona, params.domain);
+    } catch (error: any) {
+      // ── Backend offline: display actual error to help debugging ─────────────────
+      const errorMsg = error.response?.data?.detail || error.message || "Unknown error";
+      const status = error.response?.status || "Network Error";
+      
+      return {
+        answer: `❌ **Backend API Error (${status})**\n\nThe backend failed to process the request. \n\n**Error Details:**\n\`${errorMsg}\`\n\nPlease check Vercel logs or ensure the backend is deployed correctly.`,
+        sources: [],
+        suggested_questions: ["What is the status of the backend API?"],
+        domain_detected: params.domain || 'general',
+        persona: params.persona,
+        response_time: 0,
+        session_id: 'error-session'
+      };
     }
   },
 
