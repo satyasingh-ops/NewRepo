@@ -171,7 +171,7 @@ class RAGService:
     ) -> List[Dict[str, Any]]:
         """Semantic search for relevant documents."""
         if not self._initialized or self._vector_store is None:
-            return []
+            return self._fallback_text_search(query, domain, top_k)
 
         # If user explicitly selected a domain, raise threshold to ensure domain documents return
         effective_threshold = 2.2 if domain else score_threshold
@@ -206,7 +206,46 @@ class RAGService:
             return filtered
         except Exception as e:
             logger.error(f"Search failed: {e}")
+            return self._fallback_text_search(query, domain, top_k)
+            
+    def _fallback_text_search(self, query: str, domain: Optional[str] = None, top_k: int = 5) -> List[Dict[str, Any]]:
+        """Simple keyword search when ChromaDB is not available (e.g. on Vercel)."""
+        logger.info("Using fallback text search for internal database")
+        results = []
+        keywords = [w.lower() for w in query.split() if len(w) > 3 and w.lower() not in ["what", "how", "explain", "describe", "when", "where", "who", "why"]]
+        if not keywords:
+            keywords = [query.lower()]
+            
+        base_dir = Path(KNOWLEDGE_BASE_DIR)
+        if not base_dir.exists():
             return []
+            
+        domain_dirs = [base_dir / domain] if domain and (base_dir / domain).exists() else list(base_dir.iterdir())
+        
+        for domain_dir in domain_dirs:
+            if not domain_dir.is_dir():
+                continue
+                
+            docs = self._load_text_documents(domain_dir)
+            for doc in docs:
+                content = doc["content"]
+                chunks = self._chunk_text(content, doc["metadata"])
+                for chunk in chunks:
+                    chunk_text = chunk["content"]
+                    chunk_lower = chunk_text.lower()
+                    
+                    # Calculate a simple keyword match score
+                    score = sum(1 for kw in keywords if kw in chunk_lower)
+                    if score > 0:
+                        results.append({
+                            "content": chunk_text,
+                            "metadata": chunk["metadata"],
+                            "score": 2.0 - (score * 0.2)  # Lower is better, mock a distance score
+                        })
+                        
+        # Sort by best score and return top_k
+        results.sort(key=lambda x: x["score"])
+        return results[:top_k]
     
     def format_context(self, search_results: List[Dict[str, Any]]) -> str:
         """Format search results into context string for LLM."""
